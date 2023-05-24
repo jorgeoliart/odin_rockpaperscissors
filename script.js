@@ -1,5 +1,5 @@
 function getComputerChoice() {
-    let threeOptions = ['rock', 'paper', 'scissor'];
+    let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
     let computerSelectionString = threeOptions[computerSelectionNumber];
     return computerSelectionString;
@@ -16,8 +16,8 @@ function getPlayerChoice() {
 function playerRound(playerChoice, computerChoice) {
     playerChoice = getPlayerChoice();
     computerChoice = getComputerChoice();
-    console.log(playerChoice);
-    console.log(computerChoice);
+    console.log(`You chose ${playerChoice}`);
+    console.log(`The computer chose ${computerChoice}`);
     }
 
 playerRound();
