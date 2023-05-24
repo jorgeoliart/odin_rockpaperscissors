@@ -10,3 +10,10 @@ function getPlayerChoice() {
     playerSelectionString = playerSelectionString.toLowerCase();
     return playerSelectionString;
 }
+
+// playRound function that takes the choices as arguments and states the winner
+
+function playerRound (playerChoice, computerChoice) {
+    let playerChoice = playerSelectionString();
+    let computerChoice = computerSelectionString();
+}
