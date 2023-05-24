@@ -13,7 +13,11 @@ function getPlayerChoice() {
 
 // playRound function that takes the choices as arguments and states the winner
 
-function playerRound (playerChoice, computerChoice) {
-    let playerChoice = playerSelectionString();
-    let computerChoice = computerSelectionString();
-}
+function playerRound(playerChoice, computerChoice) {
+    playerChoice = getPlayerChoice();
+    computerChoice = getComputerChoice();
+    console.log(playerChoice);
+    console.log(computerChoice);
+    }
+
+playerRound();
