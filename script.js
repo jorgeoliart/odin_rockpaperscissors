@@ -18,6 +18,16 @@ function playerRound(playerChoice, computerChoice) {
     computerChoice = getComputerChoice();
     console.log(`You chose ${playerChoice}`);
     console.log(`The computer chose ${computerChoice}`);
+
+    if (playerChoice === computerChoice) {
+        console.log("It's a tie");
+    } else if ((playerChoice === "rock" && computerChoice === "paper") ||
+    (playerChoice === "paper" && computerChoice === "rock") ||
+    (playerChoice === "scissors" && computerChoice === "paper")) {
+        console.log("You win this round");
+    } else {
+        console.log("You lose this round");
     }
+}
 
 playerRound();
