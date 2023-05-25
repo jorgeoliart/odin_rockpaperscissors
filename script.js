@@ -30,4 +30,20 @@ function playerRound(playerChoice, computerChoice) {
     }
 }
 
-playerRound();
+// Game function that runs five player rounds
+
+function game() {
+    console.log("ROUND 1");
+    playerRound();
+    console.log("ROUND 2");
+    playerRound();
+    console.log("ROUND 3");
+    playerRound();
+    console.log("ROUND 4");
+    playerRound();
+    console.log("ROUND 5");
+    playerRound();
+}
+
+game();
+/*playerRound();*/
