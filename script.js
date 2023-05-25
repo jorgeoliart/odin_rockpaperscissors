@@ -21,31 +21,43 @@ function playerRound(playerChoice, computerChoice) {
     computerChoice = getComputerChoice();
     console.log(`You chose ${playerChoice}`);
     console.log(`The computer chose ${computerChoice}`);
+    let winner;
 
     if (playerChoice === computerChoice) {
-        console.log("It's a tie");
+        console.log("It's a tie.");
+        winner = "Tie";
     } else if ((playerChoice === "rock" && computerChoice === "paper") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")) {
         console.log("You win this round");
+        winner = "Player";
     } else {
-        console.log("You lose this round");
+         console.log("You lose this round");
+         winner = "Computer";
     }
+    return winner;
 }
 
 // Game function that runs five player rounds
 
 function game() {
+    let winner;
     console.log("ROUND 1");
-    playerRound();
+    winner = playerRound();
+    console.log(winner);
+    
     console.log("ROUND 2");
-    playerRound();
+    winner = playerRound();
+    
     console.log("ROUND 3");
-    playerRound();
+    winner = playerRound();
+ 
     console.log("ROUND 4");
-    playerRound();
+    winner = playerRound();
+   
     console.log("ROUND 5");
-    playerRound();
+    winner = playerRound();
+  
 }
 
 game();
