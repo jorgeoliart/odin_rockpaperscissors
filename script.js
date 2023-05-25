@@ -9,7 +9,7 @@ function getComputerChoice() {
 } 
 
 function getPlayerChoice() {
-    let playerSelectionString = prompt("Make your choice: Rock, Paper, or Scissors");
+    let playerSelectionString = prompt("Make your choice: Rock, Paper, or Scissors. The best score after five rounds wins.");
     playerSelectionString = playerSelectionString.toLowerCase();
     return playerSelectionString;
 }
