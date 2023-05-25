@@ -24,16 +24,13 @@ function playerRound(playerChoice, computerChoice) {
     let winner;
 
     if (playerChoice === computerChoice) {
-        console.log("It's a tie.");
-        winner = "Tie";
+        winner = "It's a tie"
     } else if ((playerChoice === "rock" && computerChoice === "paper") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")) {
-        console.log("You win this round");
-        winner = "Player";
+        winner = "You win this round";
     } else {
-         console.log("You lose this round");
-         winner = "Computer";
+         winner = "You lose this round";
     }
     return winner;
 }
@@ -48,15 +45,19 @@ function game() {
     
     console.log("ROUND 2");
     winner = playerRound();
+    console.log(winner);
     
     console.log("ROUND 3");
     winner = playerRound();
+    console.log(winner);
  
     console.log("ROUND 4");
     winner = playerRound();
+    console.log(winner);
    
     console.log("ROUND 5");
     winner = playerRound();
+    console.log(winner);
   
 }
 
