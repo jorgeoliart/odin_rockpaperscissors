@@ -99,8 +99,21 @@ function game() {
     } else {
         computerScore++;
     }
+
+    if (playerScore === computerScore) {
+        console.log("It's a tie!")
+    } else if (playerScore > computerScore) {
+        console.log("You won this five-round game.")
+    } else {
+        console.log("You lost this five-round-game.")
+    }
   
 }
 
 game();
 /*playerRound();*/
+
+function checkWinner() {
+    dd
+
+}
