@@ -100,20 +100,16 @@ function game() {
         computerScore++;
     }
 
+    console.log("FINAL RESULTS");
     if (playerScore === computerScore) {
-        console.log("It's a tie!")
+        console.log(`It's a tie! Both you and the computer got ${playerScore} points.`)
     } else if (playerScore > computerScore) {
-        console.log("You won this five-round game.")
+        console.log(`You won this five-round game. You got ${playerScore} points the the computer got ${computerScore} points`);
     } else {
-        console.log("You lost this five-round-game.")
+        console.log(`You lost this five-round-game. You got ${playerScore} points the the computer got ${computerScore} points`);
     }
-  
 }
 
 game();
 /*playerRound();*/
 
-function checkWinner() {
-    dd
-
-}
