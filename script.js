@@ -42,22 +42,63 @@ function game() {
     console.log("ROUND 1");
     winner = playerRound();
     console.log(winner);
+    // add points according to winner
+    if (winner === "It's a tie") {
+        playerScore++;
+        computerScore++;
+    } else if (winner === "You win this round") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
     
     console.log("ROUND 2");
     winner = playerRound();
     console.log(winner);
+    if (winner === "It's a tie") {
+        playerScore++;
+        computerScore++;
+    } else if (winner === "You win this round") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
     
     console.log("ROUND 3");
     winner = playerRound();
     console.log(winner);
+    if (winner === "It's a tie") {
+        playerScore++;
+        computerScore++;
+    } else if (winner === "You win this round") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
  
     console.log("ROUND 4");
     winner = playerRound();
     console.log(winner);
+    if (winner === "It's a tie") {
+        playerScore++;
+        computerScore++;
+    } else if (winner === "You win this round") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
    
     console.log("ROUND 5");
     winner = playerRound();
     console.log(winner);
+    if (winner === "It's a tie") {
+        playerScore++;
+        computerScore++;
+    } else if (winner === "You win this round") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
   
 }
 
