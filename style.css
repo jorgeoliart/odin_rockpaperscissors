@@ -1,3 +1,26 @@
 h1, h2 {
     text-align: center;
 }
+
+#game-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.game-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 228, 238);
+}
+
+.game-button > img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 130px;
+}
