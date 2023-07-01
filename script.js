@@ -1,7 +1,13 @@
+// Start by setting both the player's and the computer's score at 0
 let playerScore = 0;
 let computerScore = 0;
 
-function getComputerChoice() {
+// Give the player the chance to click from three possible buttons
+// Add event listener for button ROCK
+// Add event listener for button PAPER
+// add event listener for button SCISSORS
+
+/* function getComputerChoice() {
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
     let computerSelectionString = threeOptions[computerSelectionNumber];
@@ -109,6 +115,7 @@ function game() {
         console.log(`You lost this five-round-game. You got ${playerScore} points the the computer got ${computerScore} points`);
     }
 }
+*/
 
 game();
 /*playerRound();*/
