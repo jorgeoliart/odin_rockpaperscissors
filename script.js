@@ -10,13 +10,14 @@ let buttonPaper = document.querySelector('#paper-button');
 // add event listener for button SCISSORS
 let buttonScissors = document.querySelector('#scissors-button');
 
-/* function getComputerChoice() {)
+function getComputerChoice() {
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
     let computerSelectionString = threeOptions[computerSelectionNumber];
     return computerSelectionString;
 } 
 
+/* 
 function getPlayerChoice() {
     let playerSelectionString = prompt("Make your choice: Rock, Paper, or Scissors. The best score after five rounds wins.");
     playerSelectionString = playerSelectionString.toLowerCase();
