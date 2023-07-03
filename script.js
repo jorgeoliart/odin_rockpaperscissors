@@ -4,10 +4,13 @@ let computerScore = 0;
 
 // Give the player the chance to click from three possible buttons
 // Add event listener for button ROCK
+let buttonRock =  document.querySelector('#rock-button');
 // Add event listener for button PAPER
+let buttonPaper = document.querySelector('#paper-button');
 // add event listener for button SCISSORS
+let buttonScissors = document.querySelector('#scissors-button');
 
-/* function getComputerChoice() {
+/* function getComputerChoice() {)
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
     let computerSelectionString = threeOptions[computerSelectionNumber];
