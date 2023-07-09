@@ -9,10 +9,14 @@ const rockButton = document.getElementById("rock-button");
 const paperButton = document.getElementById("paper-button");
 const scissorsButton = document.getElementById("scissors-button");
 
-// Add event listener for button ROCK
+// Add event listener for button ROCK that executes playRound()
+document.addEventListener('click', playRound);
 
-// Add event listener for button PAPER
-// add event listener for button SCISSORS
+// Add event listener for button PAPER that executes playRound()
+document.addEventListener('click', playRound);
+
+// add event listener for button SCISSORS that executes playRound()
+document.addEventListener('click', playRound);
 
 
 /* 
