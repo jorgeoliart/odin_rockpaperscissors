@@ -4,7 +4,7 @@ let computerScore = 0;
 
 // Give the player the chance to click from three possible buttons
 
-// Create three buttons as variables in LS
+// Create three buttons as variables in JS
 const rockButton = document.getElementById("rock-button");
 const paperButton = document.getElementById("paper-button");
 const scissorsButton = document.getElementById("scissors-button");
@@ -14,12 +14,21 @@ const scissorsButton = document.getElementById("scissors-button");
 // Add event listener for button PAPER
 // add event listener for button SCISSORS
 
-/* function getComputerChoice() {
+
+/* 
+function getComputerChoice() {
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
     let computerSelectionString = threeOptions[computerSelectionNumber];
     return computerSelectionString;
 } 
+
+// a function that gets the player's choice
+
+function getPlayerChoiceButton() {
+
+}
+
 
 function getPlayerChoice() {
     let playerSelectionString = prompt("Make your choice: Rock, Paper, or Scissors. The best score after five rounds wins.");
