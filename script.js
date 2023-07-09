@@ -5,9 +5,9 @@ let computerScore = 0;
 // Give the player the chance to click from three possible buttons
 
 // Create three buttons as variables in JS
-const rockButton = document.getElementById("rock-button");
-const paperButton = document.getElementById("paper-button");
-const scissorsButton = document.getElementById("scissors-button");
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
 
 // Add event listener for button ROCK that executes playRound()
 document.addEventListener('click', playRound);
@@ -28,11 +28,6 @@ function getComputerChoice() {
 } 
 
 // a function that gets the player's choice
-
-function getPlayerChoiceButton() {
-
-}
-
 
 function getPlayerChoice() {
     let playerSelectionString = prompt("Make your choice: Rock, Paper, or Scissors. The best score after five rounds wins.");
