@@ -10,23 +10,28 @@ const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
 
 // Add event listener for button ROCK that executes playRound()
-rockButton.addEventListener('click', playRound);
+rockButton.addEventListener('click', function(e) {
+    console.log(e);
+});
 
 // Add event listener for button PAPER that executes playRound()
-paperButton.addEventListener('click', playRound);
+paperButton.addEventListener('click', function(e) {
+    console.log(e);
+});
 
 // add event listener for button SCISSORS that executes playRound()
-scissorsButton.addEventListener('click', playRound);
+scissorsButton.addEventListener('click', function(e) {
+    console.log(e);
+});
 
 
 // Make function to get player choice
 
-function playRound() {
-
+/* function playRound() {
 
 }
 
-/* 
+
 function getComputerChoice() {
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
