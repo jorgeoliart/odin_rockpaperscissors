@@ -3,7 +3,14 @@ let playerScore = 0;
 let computerScore = 0;
 
 // Give the player the chance to click from three possible buttons
+
+// Create three buttons as variables in LS
+const rockButton = document.getElementById("rock-button");
+const paperButton = document.getElementById("paper-button");
+const scissorsButton = document.getElementById("scissors-button");
+
 // Add event listener for button ROCK
+
 // Add event listener for button PAPER
 // add event listener for button SCISSORS
 
@@ -117,6 +124,6 @@ function game() {
 }
 */
 
-game();
-/*playerRound();*/
+/*game();
+playerRound();*/
 
