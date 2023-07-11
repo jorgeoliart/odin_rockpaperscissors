@@ -2,9 +2,10 @@
 let playerScore = 0;
 let computerScore = 0;
 
-// Create variable for playerOption
-let playerOption;
-git
+// Create variable for playerChoice and computerChoice
+let playerChoice;
+let computerChoice;
+
 // Give the player the chance to click from three possible buttons
 
 // Create three buttons as variables in JS
@@ -15,20 +16,24 @@ const scissorsButton = document.getElementById("scissors");
 // Add event listeners to the buttons
 buttonRock.addEventListener('click', function() {
     // Set "rock" as the player's option
-    playerOption = "rock"
+    playerChoice = "rock"
     // Get the computer's choice
-    getComputerChoice()
+    computerChoice = getComputerChoice();
 });
 
 buttonPaper.addEventListener('click', function() {
     // Set "paper" as the player's option
-    playerOption = "paper"
+    playerChoice = "paper"
+    // Get the computer's choice
+    computerChoice = getComputerChoice();
 
 });
 
 buttonScissors.addEventListener('click', function() {
     // Set "scissors" as the player's option
-    playerOption = "scissors"
+    playerChoice = "scissors";
+    // Get the computer's choice
+    computerChoice = getComputerChoice();
 });
 
 
