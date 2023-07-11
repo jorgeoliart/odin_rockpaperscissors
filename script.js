@@ -7,10 +7,10 @@ let playerOption;
 
 // Give the player the chance to click from three possible buttons
 
-// Get the buttons by using their ids
-const buttonRock =  document.querySelector('#rock-button');
-const buttonPaper = document.querySelector('#paper-button');
-const buttonScissors = document.querySelector('#scissors-button');
+// Create three buttons as variables in JS
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
 
 // Add event listeners to the buttons
 buttonRock.addEventListener('click', function() {
@@ -29,6 +29,13 @@ buttonScissors.addEventListener('click', function() {
     // Set "scissors" as the player's option
     playerOption = "scissors"
 });
+
+
+// Make function to get player choice
+
+/* function playRound() {
+
+}
 
 
 function getComputerChoice() {
@@ -143,6 +150,6 @@ function game() {
 }
 */
 
-game();
-/*playerRound();*/
+/*game();
+playerRound();*/
 
