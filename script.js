@@ -20,6 +20,8 @@ function game() {
             const playerChoice = button.id; // declare player choice variable and assign it the clicked button's id
             const computerChoice = getComputerChoice(); // declare computer choice variable and assign it the result from the corresponding function
             roundWinText.textContent =(playRound(playerChoice, computerChoice)); // display text that is the result of a round of play
+            playerWinsTrack.textContent = "Player wins: " + playerWins; // update text displayed that is accounting for the number of won rounds by human player
+            computerWinsTrack.textContent = "Computer wins" + computerWins; // update text displayed that is accounting for the number of won round by computer
         })
     })
 
