@@ -15,4 +15,11 @@ function game() {
 
     // Add event listeners for buttons + play round on click + track and end game
     const buttons = document.querySelectorAll('.game-button'); // Select the three buttons and create variable
+    buttons.forEach((button) => { // Create a "loop" for each of the selected buttons
+        button.addEventListener ('click', () => { // add an event listener to each of the selected buttons, by click
+        })
+
+    }
+
+    )
 }
