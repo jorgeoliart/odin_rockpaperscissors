@@ -69,6 +69,13 @@ function game() {
     computerWinsTrack.textContent = "Computer wins: " + computerWins;
     resultsDiv.appendChild(computerWinsTrack);
 
+    // create text on DOM to display who wins a round
+    const roundWinText = document.createElement("p");
+    roundWinText.style.color = "black";
+    resultsDiv.appendChild(roundWinText);
+
     
+
+
 
 }
