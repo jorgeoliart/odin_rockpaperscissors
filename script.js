@@ -33,7 +33,22 @@ function game() {
         let scissorsBeatPaperWin = "You're the man! You selected " + playerChoice + " and this piece of shit machine selected " + computerChoice + ".";
         let scissorsBeatPaperLoss = "Shame! You selected " + playerChoice + " while the machine selected " + computerChoice + ".";
 
+        // Define the conditions for each pairing between choices
+        if (playerChoice === computerChoice) {
+            return tie;
+        } else if ((playerChoice === "paper") && (computerChoice === "rock")) {
+            return paperBeatRockWin;
+        } else if ((playerChoice === "rock") && (computerChoice === "paper")) {
+            return paperBeatRockLoss;
+        } else if ((playerChoice === "rock") && (computerChoice === "scissors")) {
+            return rockBeatScissorsWin;
+        } else if ((playerChoice === "scissors") && (computerChoice === "rock")) {
+            return rockBeatScissorsLoss;
+        } else if ((playerChoice === "scissors") && (computerChoice === "paper")) {
+            return scissorsBeatPaperWin;
+        } else if ((playerChoice === "paper") && (computerChoice === "scissors")) {
+            return scissorsBeatPaperLoss;
+        }
     }
 
-    
 }
