@@ -24,7 +24,15 @@ function game() {
 
     // function to play each round and determine winner of it
     function playRound(playerChoice, computerChoice) {
-        
+        // Declare the string variables for each possible result and result message
+        let tie = "It's a tie! You selected " + playerChoice + " and the computer selected " + computerChoice + ".";
+        let paperBeatRockWin = "You fuckin win! You selected " + playerChoice + " and the damn computer selected " + computerChoice + ".";
+        let paperBeatRockLoss = "Fuck! You lost! You selected " + playerChoice + " and the mutherfuckin machine selected " + computerChoice + ".";
+        let rockBeatScissorsWin = "You are the fuckin rock master! You selected " + playerChoice + " and your sorry asss rival selected " + computerChoice + ".";
+        let rockBeatScissorsLoss = "You are a fuckin loser! You selected " + playerChoice + " and the pc selected " + computerChoice + ".";
+        let scissorsBeatPaperWin = "You're the man! You selected " + playerChoice + " and this piece of shit machine selected " + computerChoice + ".";
+        let scissorsBeatPaperLoss = "Shame! You selected " + playerChoice + " while the machine selected " + computerChoice + ".";
+
     }
 
     
