@@ -6,6 +6,10 @@ function getComputerChoice() {
     return computerSelectionString;
 }
 
-// Function that runs the game
+// Function that runs the game, with no arguments
 function game() {
+    // Declare variables that track the # of computer and player wins, and the winner of the whole game
+    let playerWins = 0;
+    let computerWins = 0;
+    let roundWinner = ""; // empty string variable
 }
