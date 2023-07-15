@@ -12,4 +12,7 @@ function game() {
     let playerWins = 0;
     let computerWins = 0;
     let roundWinner = ""; // empty string variable
+
+    // Add event listeners for buttons + play round on click + track and end game
+    const buttons = document.querySelectorAll('.game-button'); // Select the three buttons and create variable
 }
