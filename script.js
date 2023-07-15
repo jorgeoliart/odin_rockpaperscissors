@@ -57,6 +57,10 @@ function game() {
     resultsDiv.style.marginTop = "20x"; // add style to this div (margin-top)
     container.appendChild(resultsDiv); // append newly created div
 
-    
+    // create text to track number of player wins
+    const playerWinsTrack = document.createElement("p");
+    playerWinsTrack.style.color = "blue";
+    playerWinsTrack.textContent = "Player wins: " + playerWins;
+    resultsDiv.appendChild(playerWinsTrack); 
 
 }
