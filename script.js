@@ -51,4 +51,12 @@ function game() {
         }
     }
 
+    // create div DOM for all results
+    const container = document.querySelector("#container"); // declare variable to select the container div
+    const resultsDiv = document.createElement("div"); // create new div and name it as a variable
+    resultsDiv.style.marginTop = "20x"; // add style to this div (margin-top)
+    container.appendChild(resultsDiv); // append newly created div
+
+    
+
 }
