@@ -20,8 +20,6 @@ function game() {
             const playerChoice = button.id; // declare player choice variable and assign it the clicked button's id
             const computerChoice = getComputerChoice(); // declare computer choice variable and assign it the result from the corresponding function
             roundWinText.textContent =(playRound(playerChoice, computerChoice)); // display text that is the result of a round of play
-            playerWinsTrack.textContent = "Player wins: " + playerWins;
-            computerWinsTrack.textContent = "Computer wins: " + computerWins;
         })
     })
 
@@ -40,16 +38,22 @@ function game() {
         if (playerChoice === computerChoice) {
             return tie;
         } else if ((playerChoice === "paper") && (computerChoice === "rock")) {
+            playerWins++
             return paperBeatRockWin;
         } else if ((playerChoice === "rock") && (computerChoice === "paper")) {
+            computerWins++
             return paperBeatRockLoss;
         } else if ((playerChoice === "rock") && (computerChoice === "scissors")) {
+            playerWins++
             return rockBeatScissorsWin;
         } else if ((playerChoice === "scissors") && (computerChoice === "rock")) {
+            computerWins++
             return rockBeatScissorsLoss;
         } else if ((playerChoice === "scissors") && (computerChoice === "paper")) {
+            paperWins++
             return scissorsBeatPaperWin;
         } else if ((playerChoice === "paper") && (computerChoice === "scissors")) {
+            computerWins++
             return scissorsBeatPaperLoss;
         }
     }
