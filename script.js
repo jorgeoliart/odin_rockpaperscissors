@@ -20,8 +20,12 @@ function game() {
             const playerChoice = button.id; // declare player choice variable and assign it the clicked button's id
             const computerChoice = getComputerChoice(); // declare computer choice variable and assign it the result from the corresponding function
         })
+    })
 
+    // function to play each round and determine winner of it
+    function playRound(playerChoice, computerChoice) {
+        
     }
 
-    )
+    
 }
