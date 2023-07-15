@@ -11,7 +11,7 @@ function game() {
     // Declare variables that track the # of computer and player wins, and the winner of the whole game
     let playerWins = 0;
     let computerWins = 0;
-    let roundWinner = ""; // empty string variable
+    let gameWinner = ""; // empty string variable
 
     // Add event listeners for buttons + play round on click + track and end game
     const buttons = document.querySelectorAll('.game-button'); // Select the three buttons and create variable
@@ -69,12 +69,18 @@ function game() {
     computerWinsTrack.textContent = "Computer wins: " + computerWins;
     resultsDiv.appendChild(computerWinsTrack);
 
-    // create text on DOM to display who wins a round
+    // create text on DOM to display who wins a round. div is empty because it will only be populated when the function is run.
     const roundWinText = document.createElement("p");
     roundWinText.style.color = "black";
     resultsDiv.appendChild(roundWinText);
 
-    
+    // create text on DOM to display who wins the whole game
+    const gameWinText = document.createElement("p");
+    gameWinText.style.color = "orange";
+    gameWinText.textContent = gameWinner; // this variable vas declared globally and has values assigned to in the function "endGame"
+    resultsDiv.appendChild(gameWinText);
+
+
 
 
 
