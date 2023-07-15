@@ -18,6 +18,7 @@ function game() {
     buttons.forEach((button) => { // Create a "loop" for each of the selected buttons
         button.addEventListener ('click', () => { // add an event listener to each of the selected buttons, by click
             const playerChoice = button.id; // declare player choice variable and assign it the clicked button's id
+            const computerChoice = getComputerChoice(); // declare computer choice variable and assign it the result from the corresponding function
         })
 
     }
