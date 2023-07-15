@@ -17,6 +17,7 @@ function game() {
     const buttons = document.querySelectorAll('.game-button'); // Select the three buttons and create variable
     buttons.forEach((button) => { // Create a "loop" for each of the selected buttons
         button.addEventListener ('click', () => { // add an event listener to each of the selected buttons, by click
+            const playerChoice = button.id; // declare player choice variable and assign it the clicked button's id
         })
 
     }
