@@ -2,7 +2,7 @@
 function getComputerChoice() {
     let threeOptions = ['rock', 'paper', 'scissors'];
     let computerSelectionNumber = Math.floor(Math.random() * 3);
-    let computerSelectionString = threeOptions[computerSelectionNumer];
+    let computerSelectionString = threeOptions[computerSelectionNumber];
     return computerSelectionString;
 }
 
@@ -21,7 +21,9 @@ function game() {
             const computerChoice = getComputerChoice(); // declare computer choice variable and assign it the result from the corresponding function
             roundWinText.textContent =(playRound(playerChoice, computerChoice)); // display text that is the result of a round of play
             playerWinsTrack.textContent = "Player wins: " + playerWins; // update text displayed that is accounting for the number of won rounds by human player
-            computerWinsTrack.textContent = "Computer wins" + computerWins; // update text displayed that is accounting for the number of won round by computer
+            computerWinsTrack.textContent = "Computer wins: " + computerWins; // update text displayed that is accounting for the number of won round by computer
+            // run a function that ends the game, but first create such function within the main game function
+            endGame();
         })
     })
 
@@ -52,7 +54,7 @@ function game() {
             computerWins++
             return rockBeatScissorsLoss;
         } else if ((playerChoice === "scissors") && (computerChoice === "paper")) {
-            paperWins++
+            playerWins++
             return scissorsBeatPaperWin;
         } else if ((playerChoice === "paper") && (computerChoice === "scissors")) {
             computerWins++
@@ -86,11 +88,57 @@ function game() {
     // create text on DOM to display who wins the whole game
     const gameWinText = document.createElement("p");
     gameWinText.style.color = "orange";
-    gameWinText.textContent = gameWinner; // this variable vas declared globally and has values assigned to in the function "endGame"
+    gameWinText.textContent = gameWinner; // this variable vas declared globally and has values assigned to it in the function "endGame"
     resultsDiv.appendChild(gameWinText);
 
+    // make function to determine who won the five points first
+    function endGame() {
+        if (playerWins == 5) {
+            gameWinner = "YOU WIN!";
+            gameWinText.textContent = gameWinner;
 
+            // disable game buttons
+           const rockButton = document.getElementById("rock");
+           rockButton.classList.add("disabled");
+           const scissorsButton = document.getElementById("scissors");
+           scissorsButton.classList.add("disabled");
+           const paperButton = document.getElementById("paper");
+           paperButton.classList.add("disabled");
 
+            // create new DON button to replay
+            const playAgainButton = document.createElement("button");
+            playAgainButton.textContent = "Play the fuck again!";
+            resultsDiv.appendChild(playAgainButton);
 
+            // if clicked, reload page
+            playAgainButton.addEventListener('click', () => {
+                location.reload();
+            })
 
+        } else if (computerWins == 5) {
+            gameWinner = "COMPUTER WINS!";
+            gameWinText.textContent = gameWinner;
+
+            // disable game buttons
+            const rockButton = document.getElementById("rock");
+            rockButton.classList.add("disabled");
+            const scissorsButton = document.getElementById("scissors");
+            scissorsButton.classList.add("disabled");
+            const paperButton = document.getElementById("paper");
+            paperButton.classList.add("disabled");
+
+            // create new DOM button to replay
+            const playAgainButton = document.createElement("button");
+            playAgainButton.textContent = "Play the motherfack again!";
+            resultsDiv.appendChild(playAgainButton);
+
+            // if clicked, reload page
+            playAgainButton.addEventListener('click', () => {
+                location.reload();
+            })
+        }
+    }
 }
+
+// function call to start the game
+game();

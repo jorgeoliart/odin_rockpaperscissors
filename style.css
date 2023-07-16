@@ -36,3 +36,8 @@ h2 {
     flex-shrink: 0;
     width: 130px;
 }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
