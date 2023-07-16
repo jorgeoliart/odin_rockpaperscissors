@@ -66,28 +66,37 @@ function game() {
     const container = document.querySelector("#container"); // declare variable to select the container div
     const resultsDiv = document.createElement("div"); // create new div and name it as a variable
     resultsDiv.style.marginTop = "20x"; // add style to this div (margin-top)
+    resultsDiv.style.textAlign = "center";
     container.appendChild(resultsDiv); // append newly created div
 
     // create text on DOM to track number of player wins
     const playerWinsTrack = document.createElement("p");
     playerWinsTrack.style.color = "blue";
+    playerWinsTrack.style.textAlign = "center";
+    playerWinsTrack.style.marginTop = "40px";
+    playerWinsTrack.style.fontSize = "1.3rem";
     playerWinsTrack.textContent = "Player wins: " + playerWins;
     resultsDiv.appendChild(playerWinsTrack);
 
     // create text on DOM to track number of computer wins
     const computerWinsTrack = document.createElement("p");
     computerWinsTrack.style.color = "green";
+    computerWinsTrack.style.textAlign = "center";
+    computerWinsTrack.style.fontSize = "1.3rem";
     computerWinsTrack.textContent = "Computer wins: " + computerWins;
     resultsDiv.appendChild(computerWinsTrack);
 
     // create text on DOM to display who wins a round. div is empty because it will only be populated when the function is run.
     const roundWinText = document.createElement("p");
     roundWinText.style.color = "black";
+    roundWinText.style.textAlign = "center";
     resultsDiv.appendChild(roundWinText);
 
     // create text on DOM to display who wins the whole game
     const gameWinText = document.createElement("p");
     gameWinText.style.color = "orange";
+    gameWinText.style.textAlign = "center";
+    gameWinText.style.fontSize = "1.7rem"
     gameWinText.textContent = gameWinner; // this variable vas declared globally and has values assigned to it in the function "endGame"
     resultsDiv.appendChild(gameWinText);
 
@@ -107,6 +116,8 @@ function game() {
 
             // create new DON button to replay
             const playAgainButton = document.createElement("button");
+            playAgainButton.style.marginLeft = "auto";
+            playAgainButton.style.marginRight = "auto";
             playAgainButton.textContent = "Play the fuck again!";
             resultsDiv.appendChild(playAgainButton);
 
